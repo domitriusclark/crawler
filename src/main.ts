@@ -1,4 +1,5 @@
-import { CheerioCrawler, PlaywrightCrawler } from "crawlee";
+import "dotenv/config";
+import { CheerioCrawler } from "crawlee";
 import breakdance from "breakdance";
 import { getXataClient } from "./xata.js";
 import * as crypto from "crypto";

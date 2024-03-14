@@ -1,8 +1,8 @@
 {
-    "name": "xata-crawler",
+    "name": "crawler",
     "version": "0.0.1",
     "type": "module",
-    "description": "This is an example of a Crawlee project.",
+    "description": "A simple web scraper, originally built for Xata, but can be used for any web scraping needs.",
     "dependencies": {
         "breakdance": "^3.0.1",
         "crawlee": "^3.0.0",
@@ -11,16 +11,17 @@
     "devDependencies": {
         "@apify/tsconfig": "^0.1.0",
         "@xata.io/client": "^0.23.3",
-        "ts-node": "^10.8.0",
+        "dotenv": "^16.4.5",
+        "tsx": "^4.7.1",
         "typescript": "^5.0.0"
     },
     "scripts": {
-        "start": "npm run start:dev",
+        "start": "pnpm start:dev",
         "start:prod": "node dist/main.js",
-        "start:dev": "ts-node-esm -T src/main.ts",
+        "start:dev": "tsx src/main.ts",
         "build": "tsc",
         "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
     },
-    "author": "It's not you it's me",
+    "author": "domitriusclark",
     "license": "ISC"
 }
